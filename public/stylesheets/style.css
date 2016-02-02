@@ -13,6 +13,49 @@ html {
 body {
   margin: 0;
 }
+
+#message {
+  margin-bottom: 10px;
+}
+
+#messages p, #messages h3 {
+  display: inline;
+}
+
+#messages h3 {
+  color: #34495E;
+}
+
+img {
+  border-radius: 15px;
+}
+
+#messages {
+  height: 500px;
+  background: #46b8da;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+
+.mess {
+  margin-top: 5px;
+  margin-bottom: -8px;
+}
+
+.mess-corps {
+  height: auto;
+  padding: 5px;
+  margin-top: 2px !important;
+  border-radius: 5px;
+  background: #ecf0f1;
+  display: inline-block;
+}
+
+.date {
+  float: right;
+  color: #fff;
+}
+
 article,
 aside,
 details,

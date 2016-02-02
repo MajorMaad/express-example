@@ -6,13 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+var db = require('./config/db');
+mongoose.connect(db.url);
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var db = require('./config/db');
 
 var app = express();
-
-mongoose.connect(db.url);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
