@@ -26,6 +26,11 @@ router.post('/', function(req, res, next) {
 
   message.save(function(err) {
     if (err) res.send(err);
+
+    res.writeHead(302, {
+      'Location': '/'
+    });
+    res.end();
   });
 });
 
